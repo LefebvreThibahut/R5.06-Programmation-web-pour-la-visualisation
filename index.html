@@ -3,14 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <title>Essai_Programmation web pour la visualisation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;}
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;}
+        .top-section {
+            display: contents;}
+        .right-boxes {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;}
+        .box {
+            border: 1px solid #ccc;
+            text-align: center;}
+        .box-header {
+            background-color: #e0e0e0;
+            padding: 10px;
+            font-weight: bold;
+            border-bottom: 1px solid #ccc;}
+        .box-content {
+            padding: 15px;}
+        .box-content ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;}
+        .box-content li {
+            margin-bottom: 8px;}
+        .bottom-box {
+            grid-column: span 2;
+            border: 1px solid #ccc;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 15px;}
+    </style>
 </head>
 <body>
-    <h1>Bienvenue</h1>
-    <p>Portfolio</p>
-    <a href="Traiter.html">Aller à la compétence : Traiter</a>
-    <a href="Analyser.html">Aller à la compétence : Analyser</a>
-    <a href="Valoriser.html">Aller à la compétence : Valoriser</a>
-    <a href="Développer.html">Aller à la compétence : Développer</a>
-    <a href="Bilan.html">Bilan</a>
+        <div class="right-boxes">
+            <div class="box">
+                <div class="box-header">PROJET</div>
+                <div class="box-content">
+                    <a href="Projet.html">Lien Page / SAE</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-header">PORTFOLIO</div>
+                <div class="box-content">
+                    <ul>
+                        <li>Traiter : <a href="Traiter.html">Compétence Traiter</a></li>
+                        <li>Analyser : <a href="Analyser.html">Compétence Analyser</a></li>
+                        <li>Valoriser : <a href="Valoriser.html">Compétence Valoriser</a></li>
+                        <li>Développer : <a href="Développer.html">Compétence Développer</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-box">
+            <strong>Qui suis-je</strong>
+            <p>Parcours + Alternance +</p>
+            <a href="Bilan.html" style="display:none;">Bilan</a>
+        </div>
+    </div>
+
 </body>
 </html>
