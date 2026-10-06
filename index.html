@@ -6,49 +6,71 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;}
+            margin: 20px;
+        }
         .container {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
             max-width: 900px;
-            margin: 0 auto;}
-        .top-section {
-            display: contents;}
+            margin: 0 auto;
+        }
+        .photo-box {
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f9f9f9;
+            min-height: 250px;
+        }
         .right-boxes {
             display: flex;
             flex-direction: column;
-            gap: 20px;}
+            gap: 20px;
+        }
         .box {
             border: 1px solid #ccc;
-            text-align: center;}
+            text-align: center;
+        }
         .box-header {
             background-color: #e0e0e0;
             padding: 10px;
             font-weight: bold;
-            border-bottom: 1px solid #ccc;}
+            border-bottom: 1px solid #ccc;
+        }
         .box-content {
-            padding: 15px;}
+            padding: 15px;
+        }
         .box-content ul {
             list-style: none;
             padding: 0;
             margin: 0;
-            text-align: left;}
+            text-align: left;
+        }
         .box-content li {
-            margin-bottom: 8px;}
+            margin-bottom: 8px;
+        }
         .bottom-box {
             grid-column: span 2;
             border: 1px solid #ccc;
-            height: 120px;
+            text-align: center;
+        }
+        .bottom-box .box-content {
+            min-height: 60px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            text-align: center;
-            padding: 15px;}
+        }
     </style>
 </head>
 <body>
+
+    <div class="container">
+        <div class="photo-box">
+            <span style="color: #777; font-weight: bold;">Photo</span>
+        </div>
+
         <div class="right-boxes">
             <div class="box">
                 <div class="box-header">PROJET</div>
@@ -70,10 +92,13 @@
             </div>
         </div>
 
-        <div class="bottom-box">
-            <strong>Qui suis-je</strong>
-            <p>Parcours + Alternance +</p>
-            <a href="Bilan.html" style="display:none;">Bilan</a>
+        <div class="bottom-box box">
+            <div class="box-header">Présentation de l'étudiant</div>
+            <div class="box-content">
+                <strong>Qui suis-je</strong>
+                <p>Parcours + Alternance +</p>
+                <a href="Bilan.html" style="display:none;">Bilan</a>
+            </div>
         </div>
     </div>
 
